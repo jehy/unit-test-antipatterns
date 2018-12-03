@@ -16,7 +16,14 @@ describe('using Timeout', ()=>{
     }
     catch (err)
     {
-      timedOut = true;
+      if (err instanceof Promise.TimeoutError)
+      {
+        timedOut = true;
+      }
+      else
+      {
+        throw err;
+      }
     }
     assert.equal(timedOut, true);
   });
