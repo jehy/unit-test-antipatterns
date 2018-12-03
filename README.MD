@@ -1,7 +1,6 @@
 # Unit test antipatterns
 
-[![npm](https://img.shields.io/npm/v/unit-test-antipatterns.svg)](https://npm.im/unit-test-antipatterns)
-[![license](https://img.shields.io/npm/l/unit-test-antipatterns.svg)](https://npm.im/unit-test-antipatterns)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://travis-ci.org/jehy/unit-test-antipatterns.svg?branch=master)](https://travis-ci.org/jehy/unit-test-antipatterns)
 [![dependencies Status](https://david-dm.org/jehy/unit-test-antipatterns/status.svg)](https://david-dm.org/jehy/unit-test-antipatterns)
 [![devDependencies Status](https://david-dm.org/jehy/unit-test-antipatterns/dev-status.svg)](https://david-dm.org/jehy/unit-test-antipatterns?type=dev)
