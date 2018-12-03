@@ -1,8 +1,9 @@
-# No tests on Continuous Integration
+# No coverage
 
-Even if you write tests - it is almost useless if you don't run them.
+If you never read about test coverage - take a minute
+and [check wikipedia](https://en.wikipedia.org/wiki/Code_coverage).
 
-You should run them on commits, on publishing modules, on push, on build... Any time
-when you are about to make some change. Only then you will gain all the profit.
+Of cause, even 100% coverage does not assure that your code is flawless
+and will work in all circumstances.
 
-Remember - tests which are not launched are just a dead code.
+But that is many times better then not knowing your coverage at all.
