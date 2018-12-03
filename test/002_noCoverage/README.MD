@@ -1,4 +1,4 @@
-# No tests on Continious Integration
+# No tests on Continuous Integration
 
 Even if you write tests - it is almost useless if you don't run them.
 

@@ -1,6 +1,6 @@
 # Cryptic test names
 
-Please remember that ypu will have to check your tests many monthes later.
+Please remember that ypu will have to check your tests many months later.
 
 And there will be other developers who will have to go through tests code.
 
