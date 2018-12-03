@@ -1,11 +1,11 @@
 # Unit test antipatterns
 
-[![npm](https://img.shields.io/npm/v/request-ntlm-lite.svg)](https://npm.im/request-ntlm-lite)
-[![license](https://img.shields.io/npm/l/request-ntlm-lite.svg)](https://npm.im/request-ntlm-lite)
-[![Build Status](https://travis-ci.org/jehy/request-ntlm-lite.svg?branch=master)](https://travis-ci.org/jehy/request-ntlm-lite)
-[![dependencies Status](https://david-dm.org/jehy/request-ntlm-lite/status.svg)](https://david-dm.org/jehy/request-ntlm-lite)
-[![devDependencies Status](https://david-dm.org/jehy/request-ntlm-lite/dev-status.svg)](https://david-dm.org/jehy/request-ntlm-lite?type=dev)
-[![Known Vulnerabilities](https://snyk.io/test/github/jehy/request-ntlm-lite/badge.svg)](https://snyk.io/test/github/jehy/request-ntlm-lite)
+[![npm](https://img.shields.io/npm/v/unit-test-antipatterns.svg)](https://npm.im/unit-test-antipatterns)
+[![license](https://img.shields.io/npm/l/unit-test-antipatterns.svg)](https://npm.im/unit-test-antipatterns)
+[![Build Status](https://travis-ci.org/jehy/unit-test-antipatterns.svg?branch=master)](https://travis-ci.org/jehy/unit-test-antipatterns)
+[![dependencies Status](https://david-dm.org/jehy/unit-test-antipatterns/status.svg)](https://david-dm.org/jehy/unit-test-antipatterns)
+[![devDependencies Status](https://david-dm.org/jehy/unit-test-antipatterns/dev-status.svg)](https://david-dm.org/jehy/unit-test-antipatterns?type=dev)
+[![Known Vulnerabilities](https://snyk.io/test/github/jehy/unit-test-antipatterns/badge.svg)](https://snyk.io/test/github/jehy/unit-test-antipatterns)
 
 Some frequent mistakes which i met in unit tests.
 
