@@ -2,29 +2,36 @@
 
 const {assert} = require('chai');
 const Promise = require('bluebird');
+const sinon = require('sinon');
 
-function someLongFunction()
-{
-  return Promise.delay(10000);
+class MightyLibrary {
+  static someLongFunction() {
+    return Promise.resolve(1); // just imagine a really complex and long function here
+  }
 }
 
-describe('using Timeout', ()=>{
-  it('should cancel after 1 second', async ()=>{
-    let timedOut = false;
-    try {
-      await someLongFunction().timeout(1000);
-    }
-    catch (err)
+async function doItQuickOrFail()
+{
+  let res;
+  try {
+    res = await MightyLibrary.someLongFunction().timeout(1000);
+  }
+  catch (err)
+  {
+    if (err instanceof Promise.TimeoutError)
     {
-      if (err instanceof Promise.TimeoutError)
-      {
-        timedOut = true;
-      }
-      else
-      {
-        throw err;
-      }
+      return false;
     }
-    assert.equal(timedOut, true);
+    throw err;
+  }
+  return res;
+}
+
+describe('using Timeouts', ()=>{
+  it('should return false if waited too much', async ()=>{
+    // stub function to emulate looong work
+    sinon.stub(MightyLibrary, 'someLongFunction').callsFake(()=>Promise.delay(10000).then(()=>true));
+    const res = await doItQuickOrFail();
+    assert.equal(res, false);
   });
 });
