@@ -1,16 +1,16 @@
 # Data out of test scope
 
 At first glance, it does not matter when to read test data and to init
-supplimentary objects - inside `it`, `describe` or on the top of the module.
+supplementary objects - inside `it`, `describe` or on the top of the module.
 
 ```js
-
-const testData = require('./testData.json'); // here?
+const fs = require('fs');
+const testData = JSON.parse(fs.readFileSync('./testData.json', 'utf8')); // here?
 
 describe('some block', ()=>{
-    const testData = require('./testData.json'); // or here?
+    const testData = JSON.parse(fs.readFileSync('./testData.json', 'utf8')); // or here?
     it('should do something', ()=>{
-      const testData = require('./testData.json'); // May be here?
+      const testData = JSON.parse(fs.readFileSync('./testData.json', 'utf8')); // May be here?
   })
 })
 
